@@ -6,6 +6,7 @@ import org.anddev.andengine.input.touch.TouchEvent;
 
 import com.vnp.andengine.AndEnginePortGameActivty;
 import com.vnp.andengine.AndEngineSprise;
+import com.vnp.core.common.CommonAndroid;
 
 public class MainActivity extends AndEnginePortGameActivty {
 	private AndEngineSprise bg = new AndEngineSprise();
@@ -36,6 +37,6 @@ public class MainActivity extends AndEnginePortGameActivty {
 		getMainScene().attachChild(bg.getSprCat(), 0);
 		AnimatedSprite sprite = new AnimatedSprite(10, 10, balls.getRegCat().deepCopy());
 		getMainScene().attachChild(sprite, 1);
-		sprite.animate(300);
+		// sprite.animate(300);
 	}
 }
